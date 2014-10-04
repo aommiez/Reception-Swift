@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3624F65819CD31C900661A92 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3624F65619CD31C900661A92 /* MainViewController.swift */; };
 		3624F65919CD31C900661A92 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3624F65719CD31C900661A92 /* MainViewController.xib */; };
+		36362B0619DF97AE004517BF /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36362B0419DF97AE004517BF /* loginViewController.swift */; };
+		36362B0719DF97AE004517BF /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36362B0519DF97AE004517BF /* loginViewController.xib */; };
 		3649A8F419C98BCB007B868E /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3649A8F219C98BCB007B868E /* CheckinViewController.swift */; };
 		3649A8F519C98BCB007B868E /* CheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3649A8F319C98BCB007B868E /* CheckinViewController.xib */; };
 		3696462D19C96A980041979D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3696462C19C96A980041979D /* AppDelegate.swift */; };
@@ -31,6 +33,10 @@
 		36A3A99A19DBC248008E284D /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A98F19DBC248008E284D /* AFURLRequestSerialization.m */; };
 		36A3A99B19DBC248008E284D /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A99119DBC248008E284D /* AFURLResponseSerialization.m */; };
 		36A3A99C19DBC248008E284D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A3A99319DBC248008E284D /* AFURLSessionManager.m */; };
+		36AFAAC319DFB3BA00BC8C9D /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = 36AFAAC219DFB3BA00BC8C9D /* en.json */; };
+		36AFAAC619DFB69600BC8C9D /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AFAAC519DFB69600BC8C9D /* json.swift */; };
+		36AFAAC819DFB8C500BC8C9D /* th.json in Resources */ = {isa = PBXBuildFile; fileRef = 36AFAAC719DFB8C500BC8C9D /* th.json */; };
+		36AFAACA19DFB96200BC8C9D /* LangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AFAAC919DFB96200BC8C9D /* LangManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,8 @@
 /* Begin PBXFileReference section */
 		3624F65619CD31C900661A92 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = view/main/MainViewController.swift; sourceTree = "<group>"; };
 		3624F65719CD31C900661A92 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = view/main/MainViewController.xib; sourceTree = "<group>"; };
+		36362B0419DF97AE004517BF /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = view/login/loginViewController.swift; sourceTree = "<group>"; };
+		36362B0519DF97AE004517BF /* loginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = loginViewController.xib; path = view/login/loginViewController.xib; sourceTree = "<group>"; };
 		3649A8F219C98BCB007B868E /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckinViewController.swift; path = view/checkin/CheckinViewController.swift; sourceTree = "<group>"; };
 		3649A8F319C98BCB007B868E /* CheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CheckinViewController.xib; path = view/checkin/CheckinViewController.xib; sourceTree = "<group>"; };
 		3696462719C96A980041979D /* Reception.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reception.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +91,10 @@
 		36A3A99219DBC248008E284D /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = frameworks/AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		36A3A99319DBC248008E284D /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = frameworks/AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		36A3A99F19DBC414008E284D /* Reception-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reception-Bridging-Header.h"; sourceTree = "<group>"; };
+		36AFAAC219DFB3BA00BC8C9D /* en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = en.json; path = Reception/en.json; sourceTree = SOURCE_ROOT; };
+		36AFAAC519DFB69600BC8C9D /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = json.swift; path = frameworks/json/json.swift; sourceTree = "<group>"; };
+		36AFAAC719DFB8C500BC8C9D /* th.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = th.json; sourceTree = "<group>"; };
+		36AFAAC919DFB96200BC8C9D /* LangManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LangManager.swift; path = manager/LangManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,8 @@
 		3624F65A19CD413C00661A92 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				36362B0419DF97AE004517BF /* loginViewController.swift */,
+				36362B0519DF97AE004517BF /* loginViewController.xib */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 		3696461E19C96A980041979D = {
 			isa = PBXGroup;
 			children = (
+				36AFAABF19DFB33A00BC8C9D /* language */,
 				3696462919C96A980041979D /* Reception */,
 				3696463F19C96A980041979D /* ReceptionTests */,
 				3696462819C96A980041979D /* Products */,
@@ -213,6 +228,7 @@
 		36A3A95F19DBC0EB008E284D /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36AFAAC419DFB68E00BC8C9D /* json */,
 				36A3A96019DBC0F3008E284D /* AFNetworking */,
 			);
 			name = frameworks;
@@ -248,8 +264,27 @@
 			isa = PBXGroup;
 			children = (
 				36A3A97F19DBC17B008E284D /* ReceptionManager.swift */,
+				36AFAAC919DFB96200BC8C9D /* LangManager.swift */,
 			);
 			name = manager;
+			sourceTree = "<group>";
+		};
+		36AFAABF19DFB33A00BC8C9D /* language */ = {
+			isa = PBXGroup;
+			children = (
+				36AFAAC219DFB3BA00BC8C9D /* en.json */,
+				36AFAAC719DFB8C500BC8C9D /* th.json */,
+			);
+			name = language;
+			path = Reception/language;
+			sourceTree = "<group>";
+		};
+		36AFAAC419DFB68E00BC8C9D /* json */ = {
+			isa = PBXGroup;
+			children = (
+				36AFAAC519DFB69600BC8C9D /* json.swift */,
+			);
+			name = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,11 +368,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AFAAC319DFB3BA00BC8C9D /* en.json in Resources */,
+				36362B0719DF97AE004517BF /* loginViewController.xib in Resources */,
 				3649A8F519C98BCB007B868E /* CheckinViewController.xib in Resources */,
 				3696463719C96A980041979D /* LaunchScreen.xib in Resources */,
 				3696465F19C97A380041979D /* CheckOutViewController.xib in Resources */,
 				3696463419C96A980041979D /* Images.xcassets in Resources */,
 				3696465119C96BC20041979D /* MasterViewController.xib in Resources */,
+				36AFAAC819DFB8C500BC8C9D /* th.json in Resources */,
 				3624F65919CD31C900661A92 /* MainViewController.xib in Resources */,
 				3696465519C96E090041979D /* DetailViewController.xib in Resources */,
 			);
@@ -360,6 +398,7 @@
 				36A3A99919DBC248008E284D /* AFURLConnectionOperation.m in Sources */,
 				3696465419C96E090041979D /* DetailViewController.swift in Sources */,
 				3696465E19C97A380041979D /* CheckOutViewController.swift in Sources */,
+				36362B0619DF97AE004517BF /* loginViewController.swift in Sources */,
 				3696465019C96BC20041979D /* MasterViewController.swift in Sources */,
 				36A3A99B19DBC248008E284D /* AFURLResponseSerialization.m in Sources */,
 				36A3A98019DBC17B008E284D /* ReceptionManager.swift in Sources */,
@@ -367,10 +406,12 @@
 				36A3A99819DBC248008E284D /* AFSecurityPolicy.m in Sources */,
 				36A3A99419DBC248008E284D /* AFHTTPRequestOperation.m in Sources */,
 				36A3A99C19DBC248008E284D /* AFURLSessionManager.m in Sources */,
+				36AFAAC619DFB69600BC8C9D /* json.swift in Sources */,
 				3624F65819CD31C900661A92 /* MainViewController.swift in Sources */,
 				3649A8F419C98BCB007B868E /* CheckinViewController.swift in Sources */,
 				36A3A99619DBC248008E284D /* AFHTTPSessionManager.m in Sources */,
 				3696462D19C96A980041979D /* AppDelegate.swift in Sources */,
+				36AFAACA19DFB96200BC8C9D /* LangManager.swift in Sources */,
 				36A3A99719DBC248008E284D /* AFNetworkReachabilityManager.m in Sources */,
 				36A3A99519DBC248008E284D /* AFHTTPRequestOperationManager.m in Sources */,
 			);

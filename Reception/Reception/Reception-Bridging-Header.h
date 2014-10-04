@@ -10,3 +10,5 @@
 #define Reception_Reception_Bridging_Header_h
 #import "AFNetworking.h"
 #endif
+
+#define API_URL "http://demohotel-api.pla2app.com/"

@@ -9,21 +9,35 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
+class AppDelegate: UIResponder, UIApplicationDelegate,loginDelegate {
 
     var window: UIWindow?
     var main: MainViewController?
+    var login: loginViewController?
+    var userDefaults: NSUserDefaults?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        NSLog("%@", NSStringFromCGRect(self.window!.frame))
+        //NSLog("%@", NSStringFromCGRect(self.window!.frame))
         self.window?.backgroundColor = UIColor.whiteColor()
+        self.userDefaults = NSUserDefaults()
+        self.userDefaults!.setObject("en", forKey: "lang")
+        self.userDefaults!.synchronize()
         self.main = MainViewController(nibName: "MainViewController", bundle: nil)
-        self.window!.rootViewController = self.main
+        self.login = loginViewController(nibName: "loginViewController", bundle: nil)
+        self.login?.delegate = self;
+        self.window!.rootViewController = self.login
         self.window!.makeKeyAndVisible()
         return true
     }
-
+    
+    func loginSuccess () {
+        self.window!.rootViewController = self.main
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

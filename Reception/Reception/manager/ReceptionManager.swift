@@ -19,4 +19,8 @@ var delegate: managerDelegate?
 
 class Manager: NSObject,managerDelegate {
     
+    override init() {
+        NSLog("init manager")
+    }
+    
 }
