@@ -21,7 +21,10 @@ class MasterViewController: UIViewController,masterDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        var rightBorder = CALayer()
+        rightBorder.backgroundColor = UIColor.blackColor().CGColor
+        rightBorder.frame = CGRectMake(320 , 0, 320, self.view.frame.size.height);
+        self.navController.view.layer.borderColor = UIColor.blackColor().CGColor
         self.navController.view.frame = CGRectMake(0, 0, 320, 768)
         self.view.addSubview(self.navController.view)
     }
@@ -31,12 +34,20 @@ class MasterViewController: UIViewController,masterDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func reservationTapped(sender: AnyObject) {
+        self.delegate?.moveToView("reservation")
+    }
+    
     @IBAction func testTapped(sender: AnyObject) {
         self.delegate?.moveToView("checkin");
     }
 
     @IBAction func checkOutTapped(sender: AnyObject) {
         self.delegate?.moveToView("checkout");
+    }
+    
+    @IBAction func historyTapped(sender: AnyObject) {
+        self.delegate?.moveToView("history");
     }
     
     func moveToView(view: String) {

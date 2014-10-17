@@ -19,16 +19,22 @@ class MainViewController: UIViewController,mainDelegate,masterDelegate {
     var detail: DetailViewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
     var checkInView: CheckinViewController = CheckinViewController(nibName: "CheckinViewController", bundle: nil)
     var checkOutView: CheckOutViewController = CheckOutViewController(nibName: "CheckOutViewController", bundle: nil)
+    var reservationView: ReservationViewController = ReservationViewController(nibName: "ReservationViewController", bundle: nil)
+    var historyView: HistoryViewController = HistoryViewController(nibName: "HistoryViewController", bundle: nil)
+    var userDefaults: NSUserDefaults?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.userDefaults = NSUserDefaults()
         self.master.delegate = self;
-        self.master.view.frame = CGRectMake(0, 0, self.master.view.frame.width, self.master.view.frame.height)
+        self.master.view.frame = CGRectMake(-1, 0, self.master.view.frame.width, self.master.view.frame.height)
         var detailFrame = CGRectMake(320, 0, self.detail.view.frame.width, self.detail.view.frame.height)
         self.checkInView.view.frame = detailFrame
-        self.checkOutView.view.frame = detailFrame;
+        self.checkOutView.view.frame = detailFrame
+        self.reservationView.view.frame = detailFrame
+        self.historyView.view.frame = detailFrame
         self.view.addSubview(self.master.view)
-        self.view.addSubview(self.checkInView.view)
-        //self.view.addSubview(self.detail.view)
+        self.view.addSubview(self.reservationView.view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +44,14 @@ class MainViewController: UIViewController,mainDelegate,masterDelegate {
     
     func moveToView(view: String) {
         switch (view) {
+        case "history":
+            self.removeAllView()
+            self.view.addSubview(self.historyView.view)
+            NSLog("history")
+        case "reservation":
+            self.removeAllView()
+            self.view.addSubview(self.reservationView.view)
+            NSLog("reservation")
         case "checkin":
             self.removeAllView()
             self.view.addSubview(self.checkInView.view)
@@ -45,7 +59,6 @@ class MainViewController: UIViewController,mainDelegate,masterDelegate {
         case "checkout":
             self.removeAllView()
             self.view.addSubview(self.checkOutView.view)
-            //self.detail.changeView(self.checkOutView)
             NSLog("check out")
         default:
             NSLog("no view controller");

@@ -12,9 +12,14 @@ class CheckOutViewController: UIViewController {
 
     @IBOutlet var navController: UINavigationController!
     
+    @IBOutlet var checkOutMainView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navController.view.frame = CGRectMake(0, 0, 706, 768)
+        self.scrollView.contentSize.height = self.checkOutMainView.frame.height
+        self.scrollView.contentSize.width = self.checkOutMainView.frame.width
+        self.scrollView.addSubview(self.checkOutMainView)
         self.view.addSubview(self.navController.view)
     }
 

@@ -1,26 +1,19 @@
 //
-//  CheckinViewController.swift
+//  ReservedViewController.swift
 //  Reception
 //
-//  Created by issrapong wongyai on 9/17/2557 BE.
+//  Created by issrapong wongyai on 10/9/2557 BE.
 //  Copyright (c) 2557 platwo fusion. All rights reserved.
 //
 
 import UIKit
 
-class CheckinViewController: UIViewController {
+class ReservedViewController: UIViewController {
 
-    @IBOutlet var navController: UINavigationController!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet var checkInMainView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navController.view.frame = CGRectMake(0, 0, 706, 768)
-        self.scrollView.contentSize.height = self.checkInMainView.frame.height
-        self.scrollView.contentSize.width = self.checkInMainView.frame.width
-        self.scrollView.addSubview(self.checkInMainView)
-        self.view.addSubview(self.navController.view)
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

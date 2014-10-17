@@ -37,6 +37,12 @@
 		36AFAAC619DFB69600BC8C9D /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AFAAC519DFB69600BC8C9D /* json.swift */; };
 		36AFAAC819DFB8C500BC8C9D /* th.json in Resources */ = {isa = PBXBuildFile; fileRef = 36AFAAC719DFB8C500BC8C9D /* th.json */; };
 		36AFAACA19DFB96200BC8C9D /* LangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AFAAC919DFB96200BC8C9D /* LangManager.swift */; };
+		36CA249D19EB7F6E00E550D5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA249B19EB7F6E00E550D5 /* HistoryViewController.swift */; };
+		36CA249E19EB7F6E00E550D5 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CA249C19EB7F6E00E550D5 /* HistoryViewController.xib */; };
+		36CB181219E4E7E600ACC2FD /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB181019E4E7E600ACC2FD /* ReservationViewController.swift */; };
+		36CB181319E4E7E600ACC2FD /* ReservationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CB181119E4E7E600ACC2FD /* ReservationViewController.xib */; };
+		36EE870219E63C7F002D821D /* ReservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EE870019E63C7F002D821D /* ReservedViewController.swift */; };
+		36EE870319E63C7F002D821D /* ReservedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36EE870119E63C7F002D821D /* ReservedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +101,12 @@
 		36AFAAC519DFB69600BC8C9D /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = json.swift; path = frameworks/json/json.swift; sourceTree = "<group>"; };
 		36AFAAC719DFB8C500BC8C9D /* th.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = th.json; sourceTree = "<group>"; };
 		36AFAAC919DFB96200BC8C9D /* LangManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LangManager.swift; path = manager/LangManager.swift; sourceTree = "<group>"; };
+		36CA249B19EB7F6E00E550D5 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = view/history/HistoryViewController.swift; sourceTree = "<group>"; };
+		36CA249C19EB7F6E00E550D5 /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryViewController.xib; path = view/history/HistoryViewController.xib; sourceTree = "<group>"; };
+		36CB181019E4E7E600ACC2FD /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReservationViewController.swift; path = view/reservation/ReservationViewController.swift; sourceTree = "<group>"; };
+		36CB181119E4E7E600ACC2FD /* ReservationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReservationViewController.xib; path = view/reservation/ReservationViewController.xib; sourceTree = "<group>"; };
+		36EE870019E63C7F002D821D /* ReservedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReservedViewController.swift; path = view/reserved/ReservedViewController.swift; sourceTree = "<group>"; };
+		36EE870119E63C7F002D821D /* ReservedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReservedViewController.xib; path = view/reserved/ReservedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +198,9 @@
 		3696464C19C96BA50041979D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				36CA249A19EB7F2D00E550D5 /* history */,
+				36CB181419E4F66500ACC2FD /* Reserved */,
+				36CB180F19E4E76A00ACC2FD /* reservation */,
 				3624F65A19CD413C00661A92 /* login */,
 				3696465B19C97A0C0041979D /* checkout */,
 				3696465619C979E50041979D /* checkin */,
@@ -287,6 +302,33 @@
 			name = json;
 			sourceTree = "<group>";
 		};
+		36CA249A19EB7F2D00E550D5 /* history */ = {
+			isa = PBXGroup;
+			children = (
+				36CA249B19EB7F6E00E550D5 /* HistoryViewController.swift */,
+				36CA249C19EB7F6E00E550D5 /* HistoryViewController.xib */,
+			);
+			name = history;
+			sourceTree = "<group>";
+		};
+		36CB180F19E4E76A00ACC2FD /* reservation */ = {
+			isa = PBXGroup;
+			children = (
+				36CB181019E4E7E600ACC2FD /* ReservationViewController.swift */,
+				36CB181119E4E7E600ACC2FD /* ReservationViewController.xib */,
+			);
+			name = reservation;
+			sourceTree = "<group>";
+		};
+		36CB181419E4F66500ACC2FD /* Reserved */ = {
+			isa = PBXGroup;
+			children = (
+				36EE870019E63C7F002D821D /* ReservedViewController.swift */,
+				36EE870119E63C7F002D821D /* ReservedViewController.xib */,
+			);
+			name = Reserved;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,12 +411,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				36AFAAC319DFB3BA00BC8C9D /* en.json in Resources */,
+				36CB181319E4E7E600ACC2FD /* ReservationViewController.xib in Resources */,
+				36EE870319E63C7F002D821D /* ReservedViewController.xib in Resources */,
 				36362B0719DF97AE004517BF /* loginViewController.xib in Resources */,
 				3649A8F519C98BCB007B868E /* CheckinViewController.xib in Resources */,
 				3696463719C96A980041979D /* LaunchScreen.xib in Resources */,
 				3696465F19C97A380041979D /* CheckOutViewController.xib in Resources */,
 				3696463419C96A980041979D /* Images.xcassets in Resources */,
 				3696465119C96BC20041979D /* MasterViewController.xib in Resources */,
+				36CA249E19EB7F6E00E550D5 /* HistoryViewController.xib in Resources */,
 				36AFAAC819DFB8C500BC8C9D /* th.json in Resources */,
 				3624F65919CD31C900661A92 /* MainViewController.xib in Resources */,
 				3696465519C96E090041979D /* DetailViewController.xib in Resources */,
@@ -400,6 +445,7 @@
 				3696465E19C97A380041979D /* CheckOutViewController.swift in Sources */,
 				36362B0619DF97AE004517BF /* loginViewController.swift in Sources */,
 				3696465019C96BC20041979D /* MasterViewController.swift in Sources */,
+				36CA249D19EB7F6E00E550D5 /* HistoryViewController.swift in Sources */,
 				36A3A99B19DBC248008E284D /* AFURLResponseSerialization.m in Sources */,
 				36A3A98019DBC17B008E284D /* ReceptionManager.swift in Sources */,
 				36A3A99A19DBC248008E284D /* AFURLRequestSerialization.m in Sources */,
@@ -408,8 +454,10 @@
 				36A3A99C19DBC248008E284D /* AFURLSessionManager.m in Sources */,
 				36AFAAC619DFB69600BC8C9D /* json.swift in Sources */,
 				3624F65819CD31C900661A92 /* MainViewController.swift in Sources */,
+				36EE870219E63C7F002D821D /* ReservedViewController.swift in Sources */,
 				3649A8F419C98BCB007B868E /* CheckinViewController.swift in Sources */,
 				36A3A99619DBC248008E284D /* AFHTTPSessionManager.m in Sources */,
+				36CB181219E4E7E600ACC2FD /* ReservationViewController.swift in Sources */,
 				3696462D19C96A980041979D /* AppDelegate.swift in Sources */,
 				36AFAACA19DFB96200BC8C9D /* LangManager.swift in Sources */,
 				36A3A99719DBC248008E284D /* AFNetworkReachabilityManager.m in Sources */,
